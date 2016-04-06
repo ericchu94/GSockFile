@@ -18,7 +18,10 @@ namespace GSockFile
 			Console.Write ("IP: ");
 			var ip = Console.ReadLine ();
 
-			SendFile (ip, args[0]);
+			SendFile (ip, args [0]);
+
+			Console.Write ("Press Enter to exit...");
+			Console.ReadLine ();
 		}
 
 		private static void SendFile (string ip, string file)
